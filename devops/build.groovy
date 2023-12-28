@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
     stages {
 
         stage("BUILD") {
@@ -9,7 +10,11 @@ pipeline {
         }
 
         stage("TEST") {
+            steps {
                 sh "ll target/"
+            }
         }
+
     }
+
 }
