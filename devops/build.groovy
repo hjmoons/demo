@@ -15,7 +15,7 @@ pipeline {
 
         stage("TEST") {
             steps {
-                sh "ll target/"
+                sh "ls -al target/"
             }
         }
 
