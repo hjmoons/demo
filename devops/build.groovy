@@ -4,6 +4,7 @@ pipeline {
     tools {
         maven('maven3.9.6')
     }
+
     stages {
 
         stage("BUILD") {
