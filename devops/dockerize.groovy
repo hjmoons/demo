@@ -1,5 +1,3 @@
-def REGISTRY_URL=
-
 pipeline {
     agent any
 
