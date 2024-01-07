@@ -15,11 +15,9 @@ pipeline {
         }
 
         stage("DOCKERIZE") {
-            steps {
-                docker.withRegistry('hub.docker.com', 'docker-token') {
-                    app = docker.build("mhj592/demo")
-                    app.push("latest")
-                }
+            docker.withRegistry('hub.docker.com', 'docker-token') {
+                app = docker.build("mhj592/demo")
+                app.push("latest")
             }
         }
 
