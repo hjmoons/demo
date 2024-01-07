@@ -11,6 +11,7 @@ pipeline {
             steps {
                 sh "mvn clean package -Dmaven.test.skip=true"
                 sh "ls -al target/"
+                sh "docker --version"
             }
         }
 
