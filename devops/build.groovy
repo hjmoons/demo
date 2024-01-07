@@ -13,9 +13,10 @@ pipeline {
             }
         }
 
-        stage("TEST") {
+        stage("UPLOAD") {
             steps {
                 sh "ls -al target/"
+                // sh "curl -u https://nexus_repository_url"
             }
         }
 
