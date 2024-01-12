@@ -17,8 +17,9 @@ pipeline {
         stage("DOCKERIZE") {
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'docker-token') {
-                        app = docker.build("mhj592/demo")
+                    //docker.withRegistry('https://registry.hub.docker.com', 'docker-token') {
+                    docker.withRegistry('http://192.168.0.27:5001', 'nexus-account') {
+                        app = docker.build("demo/demo:0.0.1")
                         app.push("latest")
                     }
                 }
