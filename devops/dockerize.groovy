@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     //docker.withRegistry('https://registry.hub.docker.com', 'docker-token') {
-                    docker.withRegistry('http://192.168.0.27:5001', 'nexus-account') {
+                    docker.withRegistry('http://192.168.0.27:5000', 'nexus-account') {
                         app = docker.build("demo/demo:0.0.1")
                         app.push("latest")
                     }
