@@ -12,7 +12,7 @@
 
     <groupId>com</groupId>
     <artifactId>demo</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1 </version>
     <packaging>jar</packaging>
     <name>demo</name>
     <description>demo</description>
@@ -44,11 +44,6 @@
     </dependencies>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <name>maven-snapshots</name>
-            <url>http://192.168.0.27:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
         <repository>
             <id>maven-releases</id>
             <name>maven-release</name>

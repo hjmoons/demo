@@ -5,11 +5,6 @@
 
     <servers>
         <server>
-            <id>maven-snapshots</id>
-            <username>demo</username>
-            <password>moon0901</password>
-        </server>
-        <server>
             <id>maven-releases</id>
             <username>demo</username>
             <password>moon0901</password>
