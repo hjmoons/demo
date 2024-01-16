@@ -1,5 +1,3 @@
-def RELEASE_VERSION = params.RELEASE_VERSION
-
 pipeline {
     agent any
 
