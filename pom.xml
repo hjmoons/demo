@@ -12,7 +12,7 @@
 
     <groupId>com</groupId>
     <artifactId>demo</artifactId>
-    <version>0.0.1 </version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
     <name>demo</name>
     <description>demo</description>
