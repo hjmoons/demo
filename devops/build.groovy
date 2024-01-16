@@ -9,7 +9,7 @@ pipeline {
 
         stage("BUILD") {
             steps {
-                sh "mvn clean compile deploy -s ../setting.xml -Dmaven.test.skip=true"
+                sh "mvn clean compile deploy -s setting.xml -Dmaven.test.skip=true"
             }
         }
 
