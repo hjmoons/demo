@@ -1,5 +1,6 @@
 package com.demo.user.vo;
 
+/*
 import lombok.*;
 
 @AllArgsConstructor
@@ -10,3 +11,5 @@ public class User {
     private String name;
     private String email;
 }
+
+ */
