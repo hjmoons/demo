@@ -2,18 +2,19 @@ server:
   port: 8081
 
 spring:
-  # H2 Database 설정
+  ## H2 Database 설정
   h2:
     console:
       enabled: true
       path: /h2-console
   datasource:
       driver-class-name: org.h2.Driver
-      url: jdbc:h2:mem:demo;NON_KEYWORDS=user
+      url: jdbc:h2:mem:demo
       username: sa
       password:
   ## JPA Setting Info
   jpa:
+    defer-datasource-initialization: true  # hibernate와 data.sql 같이 적용하기 위한 옵션
     hibernate:
       ddl-auto: create  # option type: create, create-drop, update, validate, none
     properties:
@@ -22,6 +23,10 @@ spring:
         show_sql: true  # sql 쿼리를 보여줍니다.
         format_sql: true  # sql query formatting
         use_sql_comments: true  # sql 쿼리의 추가정보를 보여줍니다.
+  ## 초기 데이터 삽입을 위한 sql 설정
+  sql:
+    init:
+      mode: embedded
 
 logging:
   level:

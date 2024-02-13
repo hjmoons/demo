@@ -24,6 +24,6 @@ public class UserService {
     }
 
     public UserVo searchUser(UserVo user) {
-        return userRepository.findByEmail(user.getEmail());
+        return userRepository.findByLoginId(user.getLoginId());
     }
 }
